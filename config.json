@@ -1,127 +1,479 @@
 {
   "instructions": [
     "<p>",
+    "填写下面表格，并点击<b>提交</b>。如提交失败，请点击<b>下载</b>，",
+    "然后将表格发至我们的邮箱：<strong class='email-placeholder'>[tessaypnf@outlook.com]</strong>.",
+    "收到您的信息后，我们会在24小时内（工作日）回复您。(带*号的问题为必填信息。)",
+    "</p>",
+    "<p>",
+    "填写表格前，请先阅读",
+    "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+    "TEssay留学申请常见问题</a> 和",
+    "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+    "购买流程</a>。",
+    "</p>",
+    "<p>",
     "Fill out the form below, and click <b>Send</b> to submit it.",
-    "If that should fail, simply click <b>Download Form</b> and manually",
+    "If that should fail, simply click <b>Download</b> and manually",
     "email the completed form to:",
-    "<strong class='email-placeholder'>[Email Address]</strong>.",
+    "<strong class='email-placeholder'>[tessaypnf@outlook.com]</strong>.",
+    "Upon receipt of your information, we commit to responding within 24",
+    "hours on weekdays. (* indicates required questions)",
+    "</p>",
+    "<p>",
+    "Before filling out the form, please first read",
+    "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+    "TEssay Frequently Asked Questions</a>",
+    "和 <a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+    "Purchasing process</a>.",
     "</p>"
   ],
-  "subject": "Your Form Subject",
-  "title": "Your Custom Title",
-  "send_button_text": "Custom Submit Text",
-  "download_button_text": "Custom Download Text",
-  "missing_field_message": "Custom Missing Field Alert Message",
-  "enable_form_download": true,
-  "form_backend_url": null,
+  "subject": "TEssay Service Request Form",
+  "title": "TEssay | Contact US",
+  "send_button_text": "提交 (Send)",
+  "download_button_text": "下载 (Download)",
+  "form_backend_url": "https://formspree.io/f/xnqevwow",
   "ignore_file_upload": true,
-  "email": "your_email@example.com",
+  "email": "tessaypnf@outlook.com",
+  "enable_form_download": true,
   "questions": [
     {
-      "label": "Upload funny memes",
-      "name": "meme_imgs",
-      "type": "file",
+      "label": " * 姓名 (Name)",
+      "name": "name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "* Email",
+      "name": "email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "label": "* 你申请的项目是 (What program(s) are you going to apply for)",
+      "name": "Program",
+      "type": "selectbox",
       "required": true,
+      "options": [
+        {
+          "label": "选择所有适用的选项 (Select all that apply)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "本科 (Bachelor's)", "value": "bs"},
+        {"label": "硕士 (Master's)", "value": "ms"},
+        {"label": "博士 (Philosophy Doctorate)", "value": "phd"},
+        {"label": "兽医 (Doctorate of Veterinary Medicine)", "value": "dvm"},
+        {"label": "暑校 (Pre-College Summer Program)", "value": "summer_program"}
+      ],
+      "custom": {
+        "multiple": true
+      }
+    },
+    {
+      "label": "* 申请专业 (Major you are applying to)",
+      "name": "Apply_Major",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": [
+        "* 请简述你为什么对这个专业感兴趣",
+        "(Please briefly explain why you are interested in this major)"
+      ],
+      "name": "Why_Major",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "label": [
+        "* 请简述毕业后你的职业计划或目标是什么",
+        "(Please briefly describe your career plan or goals after graduation)"
+      ],
+      "name": "Post_Grad_Goals",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "label": "原专业 (Original major)",
+      "name": "Original_Major",
+      "type": "text",
+      "required": false
+    },
+    {
+      "label": [
+        "* 你的留学费用预算是多少RMB",
+        "(How much do you budget for tuition fees while studying abroad)"
+      ],
+      "name": "Study_Abroad_Budget",
+      "type": "number",
+      "required": true
+    },
+    {
+      "label": [
+        "* 你的留学费用主要是由谁来支持",
+        "(Who is the primary source of funding for your studies abroad)"
+      ],
+      "name": "Funding_Source",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {
+          "label": "选择所有适用的选项 (Select all that apply)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "自己 (Self)", "value": "self"},
+        {"label": "父母/其他亲人(Parents/other relatives)", "value": "parents"},
+        {"label": "国家留学基金 (China Scholarship Council)", "value": "gov_scholarship"},
+        {"label": "学校奖学金 (School scholarship)", "value": "school_scholarship"},
+        {"label": "学生贷款 (Student loans)", "value": "loans"},
+        {"label": "其他 (Others)", "value": "others"}
+      ],
       "custom": {
         "multiple": true
       }
     },
     {
       "label": [
-          "This is a multiline label. It is intended to make it easier to write",
-          "multiline questions and include <i>interesting</i>",
-          "<a href='https://developer.mozilla.org/en-US/docs/Web/HTML'",
-          "target='_blank'>HTML Syntax</a>",
-          "directly in your <i>question text</i>"
+        "如果你申请的是DVM，你的本科学校是在哪个国家 ",
+        "(If you are applying for DVM,",
+        "which country is your undergraduate school located in)"
       ],
-      "name": "multiline_html_question",
-      "type": "text",
-      "required": false
-    },
-    {
-      "label": "Select your favorite color",
-      "name": "favorite_color",
+      "name": "DVM_College_Country",
       "type": "selectbox",
-      "required": true,
+      "required": false,
       "options": [
         {
-          "label": "--Choose your favorite color(s)--",
+          "label": "--Select an option--",
           "value": "",
           "selected": true,
           "disabled": true
         },
-        {"label": "Red", "value": "red"},
-        {"label": "Blue", "value": "blue"},
-        {"label": "Green", "value": "green"},
-        {"label": "Yellow", "value": "yellow"},
-        {"label": "Purple", "value": "purple"},
-        {"label": "Orange", "value": "orange"},
-        {"label": "Pink", "value": "pink"},
-        {"label": "Black", "value": "black"},
-        {"label": "White", "value": "white"}
+        {"label": "中国 (China)", "value": "China"},
+        {"label": "美国 (United States)", "value": "United States"},
+        {"label": "英国 (United Kingdom)", "value": "United Kingdom"},
+        {"label": "阿富汗 (Afghanistan)", "value": "Afghanistan"},
+        {"label": "阿尔巴尼亚 (Albania)", "value": "Albania"},
+        {"label": "阿尔及利亚 (Algeria)", "value": "Algeria"},
+        {"label": "安道尔 (Andorra)", "value": "Andorra"},
+        {"label": "安哥拉 (Angola)", "value": "Angola"},
+        {"label": "安提瓜和巴布达 (Antigua and Barbuda)", "value": "Antigua and Barbuda"},
+        {"label": "阿根廷 (Argentina)", "value": "Argentina"},
+        {"label": "亚美尼亚 (Armenia)", "value": "Armenia"},
+        {"label": "澳大利亚 (Australia)", "value": "Australia"},
+        {"label": "奥地利 (Austria)", "value": "Austria"},
+        {"label": "阿塞拜疆 (Azerbaijan)", "value": "Azerbaijan"},
+        {"label": "巴哈马 (Bahamas)", "value": "Bahamas"},
+        {"label": "巴林 (Bahrain)", "value": "Bahrain"},
+        {"label": "孟加拉国 (Bangladesh)", "value": "Bangladesh"},
+        {"label": "巴巴多斯 (Barbados)", "value": "Barbados"},
+        {"label": "白俄罗斯 (Belarus)", "value": "Belarus"},
+        {"label": "比利时 (Belgium)", "value": "Belgium"},
+        {"label": "伯利兹 (Belize)", "value": "Belize"},
+        {"label": "贝宁 (Benin)", "value": "Benin"},
+        {"label": "不丹 (Bhutan)", "value": "Bhutan"},
+        {"label": "玻利维亚 (Bolivia)", "value": "Bolivia"},
+        {"label": "波斯尼亚 – 黑塞哥维那 (Bosnia and Herzegovina)", "value": "Bosnia and Herzegovina"},
+        {"label": "博茨瓦纳 (Botswana)", "value": "Botswana"},
+        {"label": "巴西 (Brazil)", "value": "Brazil"},
+        {"label": "文莱达鲁萨兰国 (Brunei)", "value": "Brunei"},
+        {"label": "保加利亚 (Bulgaria)", "value": "Bulgaria"},
+        {"label": "布基纳法索 (Burkina Faso)", "value": "Burkina Faso"},
+        {"label": "缅甸 (Burma)", "value": "Burma"},
+        {"label": "蒲隆地 (Burundi)", "value": "Burundi"},
+        {"label": "柬埔寨 (Cambodia)", "value": "Cambodia"},
+        {"label": "喀麦隆 (Cameroon)", "value": "Cameroon"},
+        {"label": "加拿大 (Canada)", "value": "Canada"},
+        {"label": "佛得角 (Cape Verde)", "value": "Cabo Verde"},
+        {"label": "中非共和国 (Central African Republic)", "value": "Central African Republic"},
+        {"label": "乍得 (Chad)", "value": "Chad"},
+        {"label": "智利 (Chile)", "value": "Chile"},
+        {"label": "哥伦比亚 (Colombia)", "value": "Colombia"},
+        {"label": "科摩罗 (Comoros)", "value": "Comoros"},
+        {"label": "刚果民主共和国 (Congo)", "value": "Congo"},
+        {"label": "刚果共和国 (Congo)", "value": "Congo"},
+        {"label": "哥斯达黎加 (Costa Rica)", "value": "Costa Rica"},
+        {"label": "克罗地亚 (Croatia)", "value": "Croatia"},
+        {"label": "古巴 (Cuba)", "value": "Cuba"},
+        {"label": "塞浦路斯 (Cyprus)", "value": "Cyprus"},
+        {"label": "捷克共和国 (Czech Republic)", "value": "Czech Republic"},
+        {"label": "丹麦 (Denmark)", "value": "Denmark"},
+        {"label": "吉布提 (Djibouti)", "value": "Djibouti"},
+        {"label": "多米尼克 (Dominica)", "value": "Dominica"},
+        {"label": "多米尼加共和国 (Dominican Republic)", "value": "Dominican Republic"},
+        {"label": "东帝汶 (East Timor)", "value": "Timor-Leste"},
+        {"label": "厄瓜多尔 (Ecuador)", "value": "Ecuador"},
+        {"label": "埃及 (Egypt)", "value": "Egypt"},
+        {"label": "萨尔瓦多 (El Salvador)", "value": "El Salvador"},
+        {"label": "赤道几内亚 (Equatorial Guinea)", "value": "Equatorial Guinea"},
+        {"label": "厄立特里亚 (Eritrea)", "value": "Eritrea"},
+        {"label": "爱沙尼亚 (Estonia)", "value": "Estonia"},
+        {"label": "埃塞俄比亚 (Ethiopia)", "value": "Ethiopia"},
+        {"label": "斐济 (Fiji)", "value": "Fiji"},
+        {"label": "芬兰 (Finland)", "value": "Finland"},
+        {"label": "法国 (France)", "value": "France"},
+        {"label": "加蓬 (Gabon)", "value": "Gabon"},
+        {"label": "冈比亚 (Gambia)", "value": "Gambia"},
+        {"label": "格鲁吉亚 (Georgia)", "value": "Georgia"},
+        {"label": "德国 (Germany)", "value": "Germany"},
+        {"label": "加纳 (Ghana)", "value": "Ghana"},
+        {"label": "希腊 (Greece)", "value": "Greece"},
+        {"label": "格林纳达 (Grenada)", "value": "Grenada"},
+        {"label": "危地马拉 (Guatemala)", "value": "Guatemala"},
+        {"label": "几内亚 (Guinea)", "value": "Guinea"},
+        {"label": "几内亚比绍 (Guinea-Bissau)", "value": "Guinea-Bissau"},
+        {"label": "圭亚那 (Guyana)", "value": "Guyana"},
+        {"label": "海地 (Haiti)", "value": "Haiti"},
+        {"label": "洪都拉斯 (Honduras)", "value": "Honduras"},
+        {"label": "匈牙利 (Hungary)", "value": "Hungary"},
+        {"label": "冰岛 (Iceland)", "value": "Iceland"},
+        {"label": "印度 (India)", "value": "India"},
+        {"label": "印度尼西亚 (Indonesia)", "value": "Indonesia"},
+        {"label": "伊朗 (Iran)", "value": "Iran"},
+        {"label": "伊拉克 (Iraq)", "value": "Iraq"},
+        {"label": "爱尔兰 (Ireland)", "value": "Ireland"},
+        {"label": "以色列 (Israel)", "value": "Israel"},
+        {"label": "意大利 (Italy)", "value": "Italy"},
+        {"label": "科特迪瓦 (Ivory Coast)", "value": "Côte d'Ivoire"},
+        {"label": "牙买加 (Jamaica)", "value": "Jamaica"},
+        {"label": "日本 (Japan)", "value": "Japan"},
+        {"label": "约旦 (Jordan)", "value": "Jordan"},
+        {"label": "哈萨克斯坦 (Kazakhstan)", "value": "Kazakhstan"},
+        {"label": "肯尼亚 (Kenya)", "value": "Kenya"},
+        {"label": "基里巴斯 (Kiribati)", "value": "Kiribati"},
+        {"label": "北朝鲜 (Korea (North))", "value": "North Korea"},
+        {"label": "韩国 (Korea (South))", "value": "South Korea"},
+        {"label": "科威特 (Kuwait)", "value": "Kuwait"},
+        {"label": "吉尔吉斯斯坦 (Kyrgyzstan)", "value": "Kyrgyzstan"},
+        {"label": "老挝 (Laos)", "value": "Laos"},
+        {"label": "拉脱维亚 (Latvia)", "value": "Latvia"},
+        {"label": "黎巴嫩 (Lebanon)", "value": "Lebanon"},
+        {"label": "莱索托 (Lesotho)", "value": "Lesotho"},
+        {"label": "利比里亚 (Liberia)", "value": "Liberia"},
+        {"label": "利比亚 (Libya)", "value": "Libya"},
+        {"label": "列支敦士登 (Liechtenstein)", "value": "Liechtenstein"},
+        {"label": "立陶宛 (Lithuania)", "value": "Lithuania"},
+        {"label": "卢森堡 (Luxembourg)", "value": "Luxembourg"},
+        {"label": "马其顿 (Macedonia)", "value": "North Macedonia"},
+        {"label": "马达加斯加 (Madagascar)", "value": "Madagascar"},
+        {"label": "马拉维 (Malawi)", "value": "Malawi"},
+        {"label": "马来西亚 (Malaysia)", "value": "Malaysia"},
+        {"label": "马尔代夫 (Maldives)", "value": "Maldives"},
+        {"label": "马里 (Mali)", "value": "Mali"},
+        {"label": "马耳他 (Malta)", "value": "Malta"},
+        {"label": "马绍尔群岛 (Marshall Islands)", "value": "Marshall Islands"},
+        {"label": "毛里塔尼亚 (Mauritania)", "value": "Mauritania"},
+        {"label": "毛里求斯 (Mauritius)", "value": "Mauritius"},
+        {"label": "墨西哥 (Mexico)", "value": "Mexico"},
+        {"label": "密克罗尼西亚 (Micronesia)", "value": "Micronesia"},
+        {"label": "摩尔多瓦 (Moldova)", "value": "Moldova"},
+        {"label": "摩纳哥 (Monaco)", "value": "Monaco"},
+        {"label": "蒙古 (Mongolia)", "value": "Mongolia"},
+        {"label": "黑山 (Montenegro)", "value": "Montenegro"},
+        {"label": "摩洛哥 (Morocco)", "value": "Morocco"},
+        {"label": "莫桑比克 (Mozambique)", "value": "Mozambique"},
+        {"label": "纳米比亚 (Namibia)", "value": "Namibia"},
+        {"label": "瑙鲁 (Nauru)", "value": "Nauru"},
+        {"label": "尼泊尔 (Nepal)", "value": "Nepal"},
+        {"label": "荷兰 (Netherlands)", "value": "Netherlands"},
+        {"label": "新西兰 (New Zealand)", "value": "New Zealand"},
+        {"label": "尼加拉瓜 (Nicaragua)", "value": "Nicaragua"},
+        {"label": "尼日尔 (Niger)", "value": "Niger"},
+        {"label": "尼日利亚 (Nigeria)", "value": "Nigeria"},
+        {"label": "挪威 (Norway)", "value": "Norway"},
+        {"label": "阿曼 (Oman)", "value": "Oman"},
+        {"label": "巴基斯坦 (Pakistan)", "value": "Pakistan"},
+        {"label": "帕劳 (Palau)", "value": "Palau"},
+        {"label": "巴勒斯坦 (Palestine)", "value": "Palestine"},
+        {"label": "巴拿马 (Panama)", "value": "Panama"},
+        {"label": "巴布亚新几内亚 (Papua New Guinea)", "value": "Papua New Guinea"},
+        {"label": "巴拉圭 (Paraguay)", "value": "Paraguay"},
+        {"label": "秘鲁 (Peru)", "value": "Peru"},
+        {"label": "菲律宾 (Philippines)", "value": "Philippines"},
+        {"label": "波兰 (Poland)", "value": "Poland"},
+        {"label": "葡萄牙 (Portugal)", "value": "Portugal"},
+        {"label": "卡塔尔 (Qatar)", "value": "Qatar"},
+        {"label": "罗马尼亚 (Romania)", "value": "Romania"},
+        {"label": "俄罗斯 (Russia)", "value": "Russia"},
+        {"label": "卢旺达 (Rwanda)", "value": "Rwanda"},
+        {"label": "圣基茨和尼维斯 (Saint Kitts and Nevis)", "value": "Saint Kitts and Nevis"},
+        {"label": "圣卢西亚 (Saint Lucia)", "value": "Saint Lucia"},
+        {"label": "圣文森特和格林纳丁斯 (Saint Vincent and the Grenadines)", "value": "Saint Vincent and the Grenadines"},
+        {"label": "萨摩亚 (Samoa)", "value": "Samoa"},
+        {"label": "圣马力诺 (San Marino)", "value": "San Marino"},
+        {"label": "圣多美普林西比 (São Tomé and Príncipe)", "value": "São Tomé and Príncipe"},
+        {"label": "沙特阿拉伯 (Saudi Arabia)", "value": "Saudi Arabia"},
+        {"label": "塞内加尔 (Senegal)", "value": "Senegal"},
+        {"label": "塞尔维亚 (Serbia)", "value": "Serbia"},
+        {"label": "塞舌尔 (Seychelles)", "value": "Seychelles"},
+        {"label": "塞拉利昂 (Sierra Leone)", "value": "Sierra Leone"},
+        {"label": "新加坡 (Singapore)", "value": "Singapore"},
+        {"label": "斯洛伐克 (Slovakia)", "value": "Slovakia"},
+        {"label": "斯洛文尼亚 (Slovenia)", "value": "Slovenia"},
+        {"label": "所罗门群岛 (Solomon Islands)", "value": "Solomon Islands"},
+        {"label": "索马里 (Somalia)", "value": "Somalia"},
+        {"label": "南非 (South Africa)", "value": "South Africa"},
+        {"label": "南苏丹 (South Sudan)", "value": "South Sudan"},
+        {"label": "西班牙 (Spain)", "value": "Spain"},
+        {"label": "斯里兰卡 (Sri Lanka)", "value": "Sri Lanka"},
+        {"label": "苏丹 (Sudan)", "value": "Sudan"},
+        {"label": "苏里南 (Suriname)", "value": "Suriname"},
+        {"label": "史瓦济兰 (Swaziland)", "value": "Eswatini"},
+        {"label": "瑞典 (Sweden)", "value": "Sweden"},
+        {"label": "瑞士 (Switzerland)", "value": "Switzerland"},
+        {"label": "叙利亚 (Syria)", "value": "Syria"},
+        {"label": "塔吉克斯坦 (Tajikistan)", "value": "Tajikistan"},
+        {"label": "坦桑尼亚 (Tanzania)", "value": "Tanzania"},
+        {"label": "泰国 (Thailand)", "value": "Thailand"},
+        {"label": "多哥 (Togo)", "value": "Togo"},
+        {"label": "东加 (Tonga)", "value": "Tonga"},
+        {"label": "特立尼达和多巴哥 (Trinidad and Tobago)", "value": "Trinidad and Tobago"},
+        {"label": "突尼斯 (Tunisia)", "value": "Tunisia"},
+        {"label": "土耳其 (Turkey)", "value": "Turkey"},
+        {"label": "土库曼斯坦 (Turkmenistan)", "value": "Turkmenistan"},
+        {"label": "图瓦卢 (Tuvalu)", "value": "Tuvalu"},
+        {"label": "乌干达 (Uganda)", "value": "Uganda"},
+        {"label": "乌克兰 (Ukraine)", "value": "Ukraine"},
+        {"label": "阿拉伯联合酋长国 (United Arab Emirates)", "value": "United Arab Emirates"},
+        {"label": "乌拉圭 (Uruguay)", "value": "Uruguay"},
+        {"label": "乌兹别克斯坦 (Uzbekistan)", "value": "Uzbekistan"},
+        {"label": "瓦努阿图 (Vanuatu)", "value": "Vanuatu"},
+        {"label": "梵蒂冈城 (Vatican City)", "value": "Vatican City"},
+        {"label": "委内瑞拉 (Venezuela)", "value": "Venezuela"},
+        {"label": "越南 (Vietnam)", "value": "Vietnam"},
+        {"label": "也门 (Yemen)", "value": "Yemen"},
+        {"label": "赞比亚 (Zambia)", "value": "Zambia"},
+        {"label": "津巴布韦 (Zimbabwe)", "value": "Zimbabwe"}
+      ]
+    },
+    {
+      "label": "* GPA",
+      "name": "GPA",
+      "type": "number",
+      "required": true,
+      "custom": {
+        "step": "any"
+      }
+    },
+    {
+      "label": "SAT",
+      "name": "SAT",
+      "type": "number",
+      "required": false
+    },
+    {
+      "label": "GRE/GMAT",
+      "name": "GRE_GMAT",
+      "type": "number",
+      "required": false
+    },
+    {
+      "label": "TOEFL/IELTS",
+      "name": "TOEFL_IELTS",
+      "type": "number",
+      "required": false
+    },
+    {
+      "label": "* 最早的申请截止时间 (Earliest application deadline)",
+      "name": "Application_Deadline",
+      "type": "date",
+      "required": true
+    },
+    {
+      "label": "* 所需要的服务 (Services you need)",
+      "name": "Services",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {
+          "label": "选择所有适用的选项 (Select all that apply)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "文书写作 (Essay Writing)", "value": "writing"},
+        {"label": "策略选校 (Strategic School Selection)", "value": "sss"},
+        {"label": "申请表格 (Application forms)", "value": "af"},
+        {"label": "个人咨询 (Personal Consulting)", "value": "pc"}
       ],
       "custom": {
         "multiple": true
       }
     },
     {
-      "label": "имя (Name)",
-      "name": "name",
-      "type": "text",
-      "required": true
-    },
-    {
-      "label": "ایمیل (Email)",
-      "name": "email",
-      "type": "email",
-      "required": true
-    },
-    {
-      "label": "Telephone Number (Optional)",
-      "name": "telephone",
-      "type": "tel",
+      "label": [
+        "如果你需要策略选校服务，请列出你最关心的学校因素，如综合排名、专业排名、地理位置等",
+        "(If you need Strategic School Selection, please list the factors you care",
+        "about the most, e.g. overall ranking, major ranking, location, etc...)"
+      ],
+      "name": "School_Selection_Factors",
+      "type": "textarea",
       "required": false
     },
     {
-      "label": "Age",
-      "name": "age",
-      "type": "number",
-      "required": true
-    },
-    {
-      "label": "Appointment Date/Time",
-      "name": "apt_time",
-      "type": "datetime-local",
-      "required": true
-    },
-    {
-      "label": "在历史上的军事战争中，你认为最关键的战略决策是什么",
-      "name": "chinese_question",
-      "type": "textarea",
-      "required": true
-    },
-    {
-      "label": "Website",
-      "name": "site_url",
-      "type": "url",
-      "required": true
-    },
-    {
-      "label": "Select your country",
-      "name": "country",
+      "label": [
+        "* 请选择适合你的咨询试用(语音会议)北京时间",
+        "(Choose when you are available for the introductory consultation (Beijing Time))"
+      ],
+      "name": "Interview_Time",
       "type": "selectbox",
       "required": true,
       "options": [
         {
-          "label": "--Select all that apply--",
+          "label": "选择所有适用的选项 (Select all that apply)",
           "value": "",
           "selected": true,
           "disabled": true
         },
-        {"label": "USA", "value": "USA"},
-        {"label": "Canada", "value": "CAN"},
-        {"label": "United Kingdom", "value": "UK"},
-        {"label": "Australia", "value": "AUS"}
+        {"label": "周一上午9:00 - 11:00 (Monday 9 AM - 11 AM)", "value": "Mon"},
+        {"label": "周二上午8:00 - 11:00 (Tuesday 8 AM - 11 AM)", "value": "Tue"},
+        {"label": "周四上午8:00 - 11:00 (Thursday 8 AM - 11 AM)", "value": "Thu"},
+        {"label": "周五上午8:00 - 12:00 (Friday 8 AM - 12 AM)", "value": "Fri"}
+      ],
+      "custom": {
+        "multiple": true
+      }
+    },
+    {
+      "label": "* 微信号 (WeChat ID)",
+      "name": "WeChat_ID",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": [
+        "* 请填入你的姓名首字母，确认你了解咨询试用前，需支付300元人民币。会议后,",
+        "如你决定使用我们的服务，上述费用50%将用于抵消后续服务部分费用；否则，你会获得20%的退款。",
+        "(Enter your initials to confirm your understanding that the introductory consultation",
+        "requires a payment of 300 RMB beforehand. Following the meeting, should you",
+        "decide to utilize our services, 50% of this amount will be applied as credit",
+        "towards future payments. However, if not, we offer a refund of 20% of the",
+        "total fee)"
+      ],
+      "name": "Interview_Agreement",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "* 你是从哪里了解到我们的 (Where did you learn about us)",
+      "name": "Platform",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {
+          "label": "选择所有适用的选项 (Select all that apply)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "知乎 (Zhihu)", "value": "zhihu"},
+        {"label": "微信公众号 (WeChat)", "value": "wechat"},
+        {"label": "TEssay.org", "value": "tessay"},
+        {"label": "朋友或家人推荐 (Friends/Family)", "value": "f&f"},
+        {"label": "其他 (Other)", "value": "other"}
       ],
       "custom": {
         "multiple": true
