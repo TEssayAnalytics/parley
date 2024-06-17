@@ -103,41 +103,6 @@
     },
     {
       "label": [
-        "* 你的留学费用预算是多少RMB",
-        "(How much do you budget for tuition fees while studying abroad)"
-      ],
-      "name": "Study_Abroad_Budget",
-      "type": "number",
-      "required": true
-    },
-    {
-      "label": [
-        "* 你的留学费用主要是由谁来支持",
-        "(Who is the primary source of funding for your studies abroad)"
-      ],
-      "name": "Funding_Source",
-      "type": "selectbox",
-      "required": true,
-      "options": [
-        {
-          "label": "选择所有适用的选项 (Select all that apply)",
-          "value": "",
-          "selected": true,
-          "disabled": true
-        },
-        {"label": "自己 (Self)", "value": "self"},
-        {"label": "父母/其他亲人(Parents/other relatives)", "value": "parents"},
-        {"label": "国家留学基金 (China Scholarship Council)", "value": "gov_scholarship"},
-        {"label": "学校奖学金 (School scholarship)", "value": "school_scholarship"},
-        {"label": "学生贷款 (Student loans)", "value": "loans"},
-        {"label": "其他 (Others)", "value": "others"}
-      ],
-      "custom": {
-        "multiple": true
-      }
-    },
-    {
-      "label": [
         "如果你申请的是DVM，你的本科学校是在哪个国家 ",
         "(If you are applying for DVM,",
         "which country is your undergraduate school located in)"
