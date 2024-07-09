@@ -112,7 +112,7 @@
       "required": false,
       "options": [
         {
-          "label": "--Select an option--",
+          "label": "选择一个选项 (--Select an option--)",
           "value": "",
           "selected": true,
           "disabled": true
@@ -314,6 +314,7 @@
         {"label": "津巴布韦 (Zimbabwe)", "value": "Zimbabwe"}
       ]
     },
+
     {
       "label": "* GPA",
       "name": "GPA",
@@ -340,6 +341,26 @@
       "name": "TOEFL_IELTS",
       "type": "number",
       "required": false
+    },
+    {
+      "label":[
+        "* 你是在校生还是已经毕业",
+        " (Are you currently enrolled in an educational institution or",
+        "have you graduated)"
+      ],
+      "name": "Education_Status",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {
+          "label": "选择一个选项 (--Select an option--)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "在校生 (Currently enrolled)", "value": "in_school"},
+        {"label": "已经毕业 (Graduated)", "value": "graduated"}
+      ]
     },
     {
       "label": "* 最早的申请截止时间 (Earliest application deadline)",
@@ -410,9 +431,15 @@
     },
     {
       "label": [
-        "* 请填入你的姓名首字母，确认你了解咨询试用前，需支付300元人民币。会议后,",
+        "* 请填入你的姓名首字母，确认你已阅读",
+        "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+        "购买流程</a>，",
+        "且了解咨询试用前，需支付300元人民币。会议后,",
         "如你决定使用我们的服务，上述费用50%将用于抵消后续服务部分费用；否则，你会获得20%的退款。",
-        "(Enter your initials to confirm your understanding that the introductory consultation",
+        "(Enter your initials to confirm that you have read our",
+        "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+        "Purchasing Process</a>,",
+        "and you understand that the introductory consultation",
         "requires a payment of 300 RMB beforehand. Following the meeting, should you",
         "decide to utilize our services, 50% of this amount will be applied as credit",
         "towards future payments. However, if not, we offer a refund of 20% of the",
@@ -438,6 +465,7 @@
         {"label": "微信公众号 (WeChat)", "value": "wechat"},
         {"label": "TEssay.org", "value": "tessay"},
         {"label": "朋友或家人推荐 (Friends/Family)", "value": "f&f"},
+        {"label": "微博 (Weibo)", "value": "weibo"},
         {"label": "其他 (Other)", "value": "other"}
       ],
       "custom": {
