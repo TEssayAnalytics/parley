@@ -153,7 +153,7 @@
         "consultation lasts 30 minutes, and requires a fee of 900 RMB, payable",
         "upon scheduling. More details please refer to",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
-        "Introductory Consultation</a>))"
+        "Introductory Consultation</a>)"
       ],
       "name": "Purchase_status",
       "type": "selectbox",
