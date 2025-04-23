@@ -1,7 +1,8 @@
 {
   "instructions": [
     "<p>",
-    "欢迎使用TEssay留学申请服务，我们将竭诚为您的申请助力。",
+    "欢迎使用<a href='https://tessay.org/' target='_blank'>TEssay</a>留学申请服务,",
+    "我们将竭诚为您的申请助力。",
     "</p>",
     "<p>",
     "请填写下面表格，并点击<b>提交</b>。如提交失败，请点击<b>下载</b>，",
@@ -109,9 +110,9 @@
       "label": ["* 所需要的服务 (请参考",
         "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
         "服务内容和价格</a>)",
-        " (Services you need (please refer to",
+        " (Services you need, please refer to",
         "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
-        "Service Details and Pricing</a>))"
+        "Service Details and Pricing</a>)"
       ],
       "name": "Services",
       "type": "selectbox",
