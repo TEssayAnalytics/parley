@@ -171,6 +171,30 @@
       ]
     },
     {
+      "label": [
+        "如果上题中您选择了付费咨询(语音会议)，请选择适合您的咨询时间(北京时间)",
+        "(Choose when you are available for the introductory consultation (Beijing Time))"
+      ],
+      "name": "Interview_Time",
+      "type": "selectbox",
+      "required": false,
+      "options": [
+        {
+          "label": "选择所有适用的选项 (Select all that apply)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "周一上午8:00 - 11:00 (Monday 8 AM - 11 AM)", "value": "Mon"},
+        {"label": "周二上午8:00 - 11:00 (Tuesday 8 AM - 11 AM)", "value": "Tue"},
+        {"label": "周四上午8:00 - 11:00 (Thursday 8 AM - 11 AM)", "value": "Thu"},
+        {"label": "周五上午9:00 - 12:00 (Friday 9 AM - 12 AM)", "value": "Fri"}
+      ],
+      "custom": {
+        "multiple": true
+      }
+    },
+    {
       "label": "* GPA",
       "name": "GPA",
       "type": "number",
@@ -200,7 +224,7 @@
     {
       "label":[
         "* 您是在校生还是已经毕业",
-        " (Are you currently enrolled in an educational institution or",
+        " (Are you currently enrolled in school or",
         "have you graduated)"
       ],
       "name": "Education_Status",
@@ -225,7 +249,7 @@
     },
     {
       "label": [
-        "如果您申请的是硕士、博士或DVM项目,您的本科学校是在哪个国家 ",
+        "如果您申请的是硕士、博士或DVM项目, 您的本科学校是在哪个国家 ",
         "(If you are applying for Master's, PhD, or DVM,",
         "which country is your undergraduate school located in)"
       ],
@@ -438,7 +462,7 @@
     },
     {
       "label": [
-        "如果您申请的是本科项目,您的高中学校是在哪个国家 ",
+        "如果您申请的是本科项目, 您的高中学校是在哪个国家 ",
         "(If you are applying for college,",
         "which country is your high school located in)"
       ],
@@ -661,11 +685,17 @@
           "selected": true,
           "disabled": true
         },
-        {"label": "知乎 (Zhihu)", "value": "zhihu"},
-        {"label": "微信公众号 (WeChat)", "value": "wechat"},
         {"label": "TEssay.org", "value": "tessay"},
+        {"label": "知乎 (Zhihu)", "value": "zhihu"},
+        {"label": "微信公众号 (WeChat)", "value": "wechat_journal"},
         {"label": "朋友或家人推荐 (Friends/Family)", "value": "f&f"},
         {"label": "微博 (Weibo)", "value": "weibo"},
+        {"label": "小红书 (Red Note)", "value": "rednote"},
+        {"label": "X.com", "value": "xcom"},
+        {"label": "YouTube", "value": "youtube"},
+        {"label": "视频号 (WeChat Videos)", "value": "wechat_videos"},
+        {"label": "快手 (Kwai)", "value": "kwai"},
+        {"label": "抖音 (TikTok)", "value": "tiktok"},
         {"label": "其他 (Other)", "value": "other"}
       ],
       "custom": {
