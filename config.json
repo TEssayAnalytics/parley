@@ -5,8 +5,7 @@
     "我们将竭诚为您的申请助力。",
     "</p>",
     "<p>",
-    "请填写下面表格，并点击<b>提交</b>。如提交失败，请点击<b>下载</b>，",
-    "然后将表格发至我们的邮箱：<strong class='email-placeholder'>[tessaypnf@outlook.com]</strong>.",
+    "请填写下面表格，并点击<b>提交</b>。",
     "收到您的信息后，我们会在24小时内（工作日）回复您。(带*号的问题为必填信息。)",
     "</p>",
     "<p>",
@@ -20,9 +19,6 @@
     "</p>",
     "<p>",
     "Fill out the form below, and click <b>Send</b> to submit it.",
-    "If that should fail, simply click <b>Download</b> and manually",
-    "email the completed form to:",
-    "<strong class='email-placeholder'>[tessaypnf@outlook.com]</strong>.",
     "Upon receipt of your information, we commit to responding within 24",
     "hours on weekdays. (* indicates required questions)",
     "</p>",
@@ -43,7 +39,7 @@
   "form_backend_url": "https://formspree.io/f/xnqevwow",
   "ignore_file_upload": true,
   "email": "tessaypnf@outlook.com",
-  "enable_form_download": true,
+  "enable_form_download": false,
   "questions": [
     {
       "label": " * 姓名 (Name)",
