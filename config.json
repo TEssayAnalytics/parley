@@ -656,7 +656,7 @@
     {
       "label":[
         "* 提交此表格的您的身份是",
-        " (Your identity when submitting this form):"
+        " (Your identity when submitting this form)"
       ],
       "name": "Submitter_Identity",
       "type": "selectbox",
