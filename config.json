@@ -48,6 +48,12 @@
       "required": true
     },
     {
+      "label": "* 年龄 (Age)",
+      "name": "Age",
+      "type": "number",
+      "required": true
+    },
+    {
       "label": "* Email",
       "name": "email",
       "type": "email",
@@ -75,6 +81,7 @@
         {"label": "硕士 (Master's)", "value": "ms"},
         {"label": "博士 (Philosophy Doctorate)", "value": "phd"},
         {"label": "兽医 (Doctorate of Veterinary Medicine)", "value": "dvm"},
+        {"label": "本科兽医预科 (Bacholor's with an Emphsis on Pre-Vet)", "value": "pre-vet"},
         {"label": "暑校 (Pre-College Summer Program)", "value": "summer_program"}
       ],
       "custom": {
@@ -121,9 +128,10 @@
           "disabled": true
         },
         {"label": "文书写作 (Essay Writing)", "value": "writing"},
-        {"label": "策略选校 (Strategic School Selection)", "value": "sss"},
-        {"label": "申请表格 (Application forms)", "value": "af"},
-        {"label": "个人定制咨询 (Personal Consulting)", "value": "pc"}
+        {"label": "策略选校 (Strategic School Selection)", "value": "school_selection"},
+        {"label": "申请表格 (Application forms)", "value": "app_form"},
+        {"label": "兽医预科咨询 (Pre-Vet Consulting)", "value": "pre_vet_consulting"},
+        {"label": "个人咨询 (Personal Consulting)", "value": "personal_consulting"}
       ],
       "custom": {
         "multiple": true
@@ -143,11 +151,11 @@
     },
     {
       "label": ["* 您当下的需求属于以下哪种情况？",
-        "(注:付费咨询为30分钟,费用900元人民币,需在预约签约时支付。具体请参考",
+        "(注:付费咨询费用900元人民币, 电子邮件问答,需在预约签约时支付。具体请参考",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
         "咨询试用</a>)",
         "(What is the purpose of your inquiry today? (An introductory",
-        "consultation lasts 30 minutes, and requires a fee of 900 RMB, payable",
+        "consultation via Email Q&A requires a fee of 900 RMB, payable",
         "upon scheduling. More details please refer to",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
         "Introductory Consultation</a>)"
@@ -165,30 +173,6 @@
         {"label": "直接准备签约和购买申请服务 (Ready to purchase your service(s). Let’s proceed with a contract)", "value": "ready_to_purchase"},
         {"label": "付费咨询，需要先咨询一些问题和了解你们的服务 (Need an introductory consultation and learn about your services)", "value": "intro_consultation"}
       ]
-    },
-    {
-      "label": [
-        "如果上题中您选择了付费咨询(语音会议)，请选择适合您的咨询时间(北京时间)",
-        "(Choose when you are available for the introductory consultation (Beijing Time))"
-      ],
-      "name": "Interview_Time",
-      "type": "selectbox",
-      "required": false,
-      "options": [
-        {
-          "label": "选择所有适用的选项 (Select all that apply)",
-          "value": "",
-          "selected": true,
-          "disabled": true
-        },
-        {"label": "周一上午8:00 - 11:00 (Monday 8 AM - 11 AM)", "value": "Mon"},
-        {"label": "周二上午8:00 - 11:00 (Tuesday 8 AM - 11 AM)", "value": "Tue"},
-        {"label": "周四上午8:00 - 11:00 (Thursday 8 AM - 11 AM)", "value": "Thu"},
-        {"label": "周五上午9:00 - 12:00 (Friday 9 AM - 12 AM)", "value": "Fri"}
-      ],
-      "custom": {
-        "multiple": true
-      }
     },
     {
       "label": "* GPA",
@@ -670,6 +654,25 @@
       ]
     },
     {
+      "label":[
+        "* 提交此表格的您的身份是",
+        " (Your identity when submitting this form):"
+      ],
+      "name": "Submitter_Identity",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {
+          "label": "选择一个选项 (--Select an option--)",
+          "value": "",
+          "selected": true,
+          "disabled": true
+        },
+        {"label": "留学申请者本人 (Applicant)", "value": "applicant"},
+        {"label": "申请者家长 (Parent)", "value": "parent"}
+      ]
+    },
+    {
       "label": "* 您是从哪里了解到我们的 (Where did you learn about us)",
       "name": "Platform",
       "type": "selectbox",
@@ -685,13 +688,14 @@
         {"label": "知乎 (Zhihu)", "value": "zhihu"},
         {"label": "微信公众号 (WeChat)", "value": "wechat_journal"},
         {"label": "朋友或家人推荐 (Friends/Family)", "value": "f&f"},
-        {"label": "微博 (Weibo)", "value": "weibo"},
         {"label": "小红书 (Red Note)", "value": "rednote"},
-        {"label": "X.com", "value": "xcom"},
-        {"label": "YouTube", "value": "youtube"},
         {"label": "视频号 (WeChat Videos)", "value": "wechat_videos"},
         {"label": "快手 (Kwai)", "value": "kwai"},
         {"label": "抖音 (TikTok)", "value": "tiktok"},
+        {"label": "微博 (Weibo)", "value": "weibo"},
+        {"label": "X.com", "value": "xcom"},
+        {"label": "YouTube", "value": "youtube"},
+
         {"label": "其他 (Other)", "value": "other"}
       ],
       "custom": {
