@@ -95,15 +95,6 @@
       "required": true
     },
     {
-      "label": [
-        "* 请简述您为什么对这个专业感兴趣",
-        "(Please briefly explain why you are interested in this major)"
-      ],
-      "name": "Why_Major",
-      "type": "textarea",
-      "required": true
-    },
-    {
       "label": "* 最早的申请截止时间 (Earliest application deadline)",
       "name": "Application_Deadline",
       "type": "date",
