@@ -704,9 +704,13 @@
     },
     {
       "label": [
-        "* 请签署您的姓名以确认：以上所提供信息真实有效。",
-        "(Please sign your name to confirm: all information provided above",
-        "is true and correct)"
+        "* 请签署您的姓名以确认：以上所提供信息真实有效, 且同意遵守",
+        "<a href='https://tessay.org/pages/code-of-conduct' target='_blank'>",
+        "客户行为准则</a> ",
+        "(Please sign your name to certify: All information provided above",
+        "is truthful and I agree to fully comply with the",
+        "<a href='https://tessay.org/pages/code-of-conduct' target='_blank'>",
+        "Customer Code of Conduct</a>) "
       ],
       "name": "Signature",
       "type": "text",
