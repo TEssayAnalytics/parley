@@ -66,7 +66,7 @@
       "required": true
     },
     {
-      "label": "* 您申请的项目是 (What program(s) are you going to apply for)",
+      "label": "* 您申请或咨询的项目是 (What program(s) are you going to apply for or inquiring about)",
       "name": "Program",
       "type": "selectbox",
       "required": true,
