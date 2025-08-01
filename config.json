@@ -106,7 +106,7 @@
         "服务内容和价格</a>)",
         " (Services you need, please refer to",
         "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
-        "Service Details and Pricing</a>)"
+        "Services and Pricing</a>)"
       ],
       "name": "Services",
       "type": "selectbox",
@@ -129,27 +129,28 @@
       }
     },
     {
-      "label": [
-        "如有需要，请简要解释您需要的服务或想了解的信息, 比如一篇VMCAS主文书和两篇附加文书的价格，",
-        "或申请10所美国本科学校全套服务的价格",
-        "(If necessary, please briefly explain your needs within these services,",
-        "e.g. price for one VMCAS main essay plus two supplemental essays,",
-        "or price of the full package for applying 10 colleges)"
-      ],
-      "name": "Services_explained",
-      "type": "textarea",
-      "required": false
-    },
-    {
       "label": ["* 您当下的需求属于以下哪种情况？",
-        "(注:付费咨询费用900元人民币, 电子邮件问答,需在预约签约时支付。具体请参考",
+        "<p>(注: 如果您想购买的服务（或套餐）未在",
+        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+        "服务内容和价格</a>",
+        "中列出，或价格标注为'定价'，或您对我们的服务有任何探索性问题，请先购买",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
-        "咨询试用</a>)",
-        "(What is the purpose of your inquiry today? (An introductory",
-        "consultation via Email Q&A requires a fee of 900 RMB, payable",
-        "upon scheduling. More details please refer to",
+        "付费咨询试用</a>,",
+        "咨询中我们将充分了解您的需求并提供精准报价或解答。",
+        "咨询试用（电子邮件问答）费用900元, 需在预约签约时支付。</p>",
+        "What is the purpose of your inquiry today? Note: For services",
+        "not listed in the",
+        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+        "Services and Pricing</a>",
+        ", priced as 'to be determined', or any",
+        "exploratory questions, please first purchase an",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
-        "Introductory Consultation</a>)"
+        "Introductory Consultation</a>.",
+        "During this session, we will assess your needs, ",
+        "and provide a tailored quote or answers. An Introductory",
+        "Consultation via Email Q&A requires a fee of 900 RMB, payable",
+        "upon scheduling)"
+
       ],
       "name": "Purchase_status",
       "type": "selectbox",
@@ -162,7 +163,7 @@
           "disabled": true
         },
         {"label": "直接准备签约和购买申请服务 (Ready to purchase your service(s). Let’s proceed with a contract)", "value": "ready_to_purchase"},
-        {"label": "付费咨询，需要先咨询一些问题和了解你们的服务 (Need an introductory consultation and learn about your services)", "value": "intro_consultation"}
+        {"label": "付费咨询试用，需要先咨询一些问题和/或了解你们的服务 (Need an Introductory Consultation and/or learn about your services)", "value": "intro_consultation"}
       ]
     },
     {
