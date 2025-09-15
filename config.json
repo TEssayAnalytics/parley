@@ -122,7 +122,7 @@
         {"label": "策略选校 (Strategic School Selection)", "value": "school_selection"},
         {"label": "申请表格 (Application forms)", "value": "app_form"},
         {"label": "兽医预科咨询 (Pre-Vet Consulting)", "value": "pre_vet_consulting"},
-        {"label": "个人咨询 (Personal Consulting)", "value": "personal_consulting"}
+        {"label": "个人定制咨询 (Personal Consulting)", "value": "personal_consulting"}
       ],
       "custom": {
         "multiple": true
@@ -130,26 +130,14 @@
     },
     {
       "label": ["* 您当下的需求属于以下哪种情况？",
-        "<p>(注: 如果您想购买的服务（或套餐）未在",
-        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
-        "服务内容和价格</a>",
-        "中列出，或价格标注为'定价'，或您对我们的服务有任何探索性问题，请先购买",
+        "(注: 咨询试用语音会议的费用为900元/30分钟, 需在预约签约时支付。具体信息请参考",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
-        "付费咨询试用</a>,",
-        "咨询中我们将充分了解您的需求并提供精准报价或解答。",
-        "咨询试用（电子邮件问答）费用900元, 需在预约签约时支付。</p>",
-        "What is the purpose of your inquiry today? Note: For services",
-        "not listed in the",
-        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
-        "Services and Pricing</a>",
-        ", priced as 'to be determined', or any",
-        "exploratory questions, please first purchase an",
+        "付费咨询试用</a>)",
+        "(What is the purpose of your inquiry today? Note: An Introductory",
+        "Consultation requires a fee of 900 RMB/30 minutes, payable upon scheduling.",
+        "For more information, please refer to",
         "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
-        "Introductory Consultation</a>.",
-        "During this session, we will assess your needs, ",
-        "and provide a tailored quote or answers. An Introductory",
-        "Consultation via Email Q&A requires a fee of 900 RMB, payable",
-        "upon scheduling)"
+        "Introductory Consultation</a>)"
 
       ],
       "name": "Purchase_status",
@@ -162,7 +150,7 @@
           "selected": true,
           "disabled": true
         },
-        {"label": "直接准备签约和购买申请服务 (Ready to purchase your service(s). Let’s proceed with a contract)", "value": "ready_to_purchase"},
+        {"label": "直接签约和购买申请服务 (Ready to purchase your service(s). Let’s proceed with a contract)", "value": "ready_to_purchase"},
         {"label": "付费咨询试用，需要先咨询一些问题和/或了解你们的服务 (Need an Introductory Consultation and/or learn about your services)", "value": "intro_consultation"}
       ]
     },
@@ -696,11 +684,25 @@
     },
     {
       "label": [
-        "* 请签署您的姓名以确认：以上所提供信息真实有效, 且同意遵守",
+        "* 请签署您的姓名以确认：以上所提供信息真实有效, 我已阅读",
+        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+        "TEssay服务内容和价格</a>, ",
+        "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+        "购买流程</a> 和",
+        "<a href='https://tessay.org/blog/2024/05/27/successful-cases' target='_blank'>",
+        "成功案例</a>,",
+        "且同意遵守",
         "<a href='https://tessay.org/pages/code-of-conduct' target='_blank'>",
         "客户行为准则</a> ",
         "(Please sign your name to certify: All information provided above",
-        "is truthful and I agree to fully comply with the",
+        "is truthful, I have read",
+        "<a href='https://tessay.org/blog/2024/04/02/faq' target='_blank'>",
+        "TEssay Services and Pricing</a>,",
+        "<a href='https://tessay.org/blog/2024/04/10/contact-form' target='_blank'>",
+        "Purchasing Process</a>,",
+        "and <a href='https://tessay.org/blog/2024/05/27/successful-cases' target='_blank'>",
+        "Successful Cases</a>,",
+        "and I agree to fully comply with the",
         "<a href='https://tessay.org/pages/code-of-conduct' target='_blank'>",
         "Customer Code of Conduct</a>) "
       ],
